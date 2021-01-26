@@ -9,8 +9,12 @@
 
   <h3>Existing Pets</h3>
   <% @pets.each do |pet| %>
-    <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>"><%= pet.name %><br>
+    <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%=pet.id %>"><%= pet.name %><br>
   <% end %>
+  <br>
+
+  <p>Add New Pet</p>
+  <input type='text' name='pet[name]'>
   <br>
 
   <input type="submit" value="Create Owner">

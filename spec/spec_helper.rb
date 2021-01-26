@@ -26,6 +26,11 @@ RSpec.configure do |config|
   end
 
   config.order = 'default'
+  
+  config.failure_color = :magenta
+  config.tty = true
+  config.color = true  
+
 end
 
 def app
